@@ -35,6 +35,7 @@ go-backend-ai-harness/
 │  └─ copilot/
 │     └─ copilot-instructions.md
 └─ playbooks/
+   ├─ git-workflow.md
    └─ go-backend.md
 ```
 
@@ -74,7 +75,9 @@ CODEX_HOME="$HOME/.codex-work" ./install-macos.sh
 
 ### 4. Go 后端流程手册
 
-`playbooks/go-backend.md` 是手动触发的工作手册。遇到读仓、做需求、调试、PR 自查时，让 AI 先参考这个文件，再开始具体任务。
+`playbooks/go-backend.md` 是手动触发的 Go 后端工作手册。遇到读仓、做需求、调试、PR 自查时，让 AI 先参考这个文件，再开始具体任务。
+
+`playbooks/git-workflow.md` 是手动触发的 Git 工作流手册。遇到分支创建、rebase、推送、PR/MR 前自查或 SourceTree 图混乱时，让 AI 先参考这个文件。
 
 ### 5. 其他 AI IDE 适配器
 
