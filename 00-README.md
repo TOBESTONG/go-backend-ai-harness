@@ -14,6 +14,7 @@
 ```text
 go-backend-ai-harness/
 ├─ 00-README.md
+├─ install-macos.sh
 ├─ personal-runtime/
 │  ├─ AGENTS.md
 │  └─ agents/
@@ -47,6 +48,18 @@ go-backend-ai-harness/
 ~/.codex/AGENTS.md
 ~/.codex/agents/file-handling.md
 ~/.codex/agents/reply.md
+```
+
+也可以在 macOS 上运行安装脚本。脚本只复制上述三份个人运行时文件；如果目标文件已存在，会先备份到 `~/.codex/backups/<timestamp>/`：
+
+```bash
+./install-macos.sh
+```
+
+如果需要安装到非默认目录，可以设置 `CODEX_HOME`：
+
+```bash
+CODEX_HOME="$HOME/.codex-work" ./install-macos.sh
 ```
 
 如果公司 AI IDE 使用其他文件名，例如 `CLAUDE.md`、`GEMINI.md` 或自定义 user instructions，将 `personal-runtime/AGENTS.md` 的内容复制到对应入口即可。
