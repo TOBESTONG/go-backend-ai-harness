@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+*.log
+*.secret*
+*.local.md
+*.private.md
+landing-workbench/*.private.md
+landing-workbench/*company*.md
+landing-workbench/*internal*.md
+tmp/
+temp/
