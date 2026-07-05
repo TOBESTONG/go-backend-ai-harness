@@ -23,6 +23,16 @@ go-backend-ai-harness/
 │  └─ AGENTS.md
 ├─ landing-workbench/
 │  └─ LANDING.md
+├─ tool-adapters/
+│  ├─ README.md
+│  ├─ claude/
+│  │  └─ CLAUDE.md
+│  ├─ cursor/
+│  │  └─ go-backend.mdc
+│  ├─ trae/
+│  │  └─ rules.md
+│  └─ copilot/
+│     └─ copilot-instructions.md
 └─ playbooks/
    └─ go-backend.md
 ```
@@ -53,7 +63,13 @@ go-backend-ai-harness/
 
 `playbooks/go-backend.md` 是手动触发的工作手册。遇到读仓、做需求、调试、PR 自查时，让 AI 先参考这个文件，再开始具体任务。
 
-### 5. 可选 skill：Ponytail
+### 5. 其他 AI IDE 适配器
+
+`tool-adapters/` 提供 Claude Code、Cursor、Trae 和 GitHub Copilot 的入口模板。它们不是新的规则源头，只是把 `personal-runtime/`、`repo-overlay/` 和 `playbooks/` 的核心原则映射到不同工具。
+
+具体用法见 `tool-adapters/README.md`。
+
+### 6. 可选 skill：Ponytail
 
 `Ponytail` 是一个优秀的极简工程 skill，适合在新环境中按公司规则确认后安装。它的核心思想已经吸收到本 harness：先判断需求是否真实存在，再复用代码库已有实现，再使用标准库、平台能力和已安装依赖，最后才写最小代码。
 
