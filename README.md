@@ -13,7 +13,7 @@
 
 ```text
 go-backend-ai-harness/
-├─ 00-README.md
+├─ README.md
 ├─ install-macos.sh
 ├─ personal-runtime/
 │  ├─ AGENTS.md
