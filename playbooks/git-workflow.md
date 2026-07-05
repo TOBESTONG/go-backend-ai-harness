@@ -94,7 +94,7 @@ git commit -m "test(user): cover invalid token case"
 
 ## 4. 同步目标分支
 
-个人功能分支推荐用 rebase 保持历史线性：
+个人独占功能分支可按团队规范 rebase 到最新目标分支：
 
 ```bash
 git fetch origin
@@ -108,7 +108,7 @@ git fetch origin
 git rebase origin/main
 ```
 
-rebase 的含义：把你的本地提交拿下来，放到最新目标分支后面重新播放一遍。提交 hash 会变化，所以已经推送过的个人分支 rebase 后通常需要安全强推。
+多人共享分支不要随意 rebase 或强推。团队要求 merge commit、squash merge 或禁止强推时，按团队规范执行。
 
 冲突处理：
 
